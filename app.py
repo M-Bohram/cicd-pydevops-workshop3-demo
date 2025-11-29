@@ -12,9 +12,11 @@ def health():
 def index():
     return jsonify(message="Hello, CI!"), 200
 
+
 @app.get("/test")
 def index():
     return jsonify(message="This is a test endpoint!"), 200
+
 
 if __name__ == "__main__":
     # For local runs: uvicorn/gunicorn is better for prod, but this is fine for demo.
