@@ -14,7 +14,7 @@ def index():
 
 
 @app.get("/test")
-def index():
+def test():
     return jsonify(message="This is a test endpoint!"), 200
 
 
